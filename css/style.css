@@ -632,7 +632,7 @@ body{
     
 }
 #img-tampilan-mobile1{
-    background-image: url(../myprofile/img/artboard-finish3.png);
+    background-image: url(../img/artboard-finish3.png);
 }
 .w-tampilan-mobile:hover .tampilan-mobile{
     margin-top: -540px;
@@ -647,7 +647,7 @@ body{
     height: 515px;
 }
 .phone-mobile{
-    background-image: url(../myprofile/img/phone5.png);
+    background-image: url(../img/phone5.png);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 7px;
