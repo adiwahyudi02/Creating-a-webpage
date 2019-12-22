@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="_css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="_css/responsive.css" />
+    <script src="_js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="_js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="_js/slick/slick-theme.css"/>
+    <script type="text/javascript" src="_js/slick/slick.min.js"></script>
+    <script>
+            $(document).ready(function () {
+                
+                // service lingkaran ikon
+    
+                function gantiService(item) {
+                    $(".w-konten-service").hide();
+    
+                    $(".font-icon").removeClass("add-font-icon");
+    
+                    $("#icon-" + item).addClass("add-font-icon");
+    
+                    $("#w-konten-service-" + item).hide();
+    
+                    $("#w-konten-service-" + item).fadeIn();
+    
+                    }
+    
+                $("#icon-newspaper").click(function () {
+                    gantiService("newspaper");
+                });
+    
+                $("#icon-coins").click(function () {
+                    gantiService("coins");
+                });
+    
+                $("#icon-chart-line").click(function () {
+                    gantiService("chart-line");
+                });
+    
+                $("#icon-clock").click(function () {
+                    gantiService("clock");
+                });
+    
+                $("#icon-sheild").click(function () {
+                    gantiService("sheild");
+                });
+    
+                $("#icon-globe").click(function () {
+                    gantiService("globe");
+                });
+    
+                $("#icon-layer-group").click(function () {
+                    gantiService("layer-group");
+                });
+    
+                $("#icon-lock").click(function () {
+                    gantiService("lock");
+                });
+    
+                // deskripsi service
+    
+                function deskripsiService(keberapa) {
+                    $(".icon-deskripsi-service").removeClass("add-icon-deskripsi-service");
+    
+                    $("#icon-deskripsi-service-" +keberapa).addClass("add-icon-deskripsi-service")
+    
+                    $(".wadah-konten-deskripsi").hide();
+    
+                    $("#konten-deskripsi-" +keberapa).fadeIn();
+                }
+    
+                $("#icon-deskripsi-service-1").click(function(){
+                    deskripsiService("1");
+                });
+    
+                
+                $("#icon-deskripsi-service-2").click(function(){
+                    deskripsiService("2");
+                });
+    
+                
+                $("#icon-deskripsi-service-3").click(function(){
+                    deskripsiService("3");
+    
+                });
+    
+                // konten-deskripsi
+                $('#konten-deskripsi').slick({
+                    dots:true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000, 
+                });
+    
+                // phone
+    
+                $('#slick-tampilan-phone').slick({
+                    dots:true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000, 
+                });
+    
+                //our-history
+                
+                function gantiTahun(tahun) {
+                    $(".lingkaran-tahun-our-history").removeClass("add-lingkaran-tahun-our-history");
+    
+                    $("#tahun-" + tahun).addClass("add-lingkaran-tahun-our-history");
+                    
+                    $('.lingkaran-dalam-tahun-our-history').hide();
+                    $("#ld-tahun-" + tahun).fadeIn("slow");
+    
+                    $('.wadah-konten-tahun-our-history').hide();
+                    $("#konten-our-history-" + tahun).fadeIn("slow");
+                }
+    
+                $("#tahun-2013").click(function () {
+                    gantiTahun("2013");
+                });
+    
+                $("#tahun-2015").click(function () {
+                    gantiTahun("2015");
+                });
+    
+                $("#tahun-2017").click(function () {                
+                    gantiTahun("2017");
+                });
+    
+                $("#tahun-2019").click(function () {
+                    gantiTahun("2019");
+                });
+            });
+        </script>
+</head>
+<body>
+    <div id="bg">
+        <div id="shadow">
+            <div class="wadah-bodas">
+                <div class="container">
+                    <h2 class="title">My Biodata</h2>
+                    <nav class="w-nav" >
+                        <div class=" k-nav">
+                            <a href="home.html" class="navigasi">Home
+                                <div class="b-down"></div>
+                            </a>
+                        </div>
+                        <div class=" k-nav">
+                            <div class="wadah-menu">
+                                <a href="#w-icon-service" class="navigasi">Skills
+                                    <div class="b-down"></div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class=" k-nav">
+                            <div class="wadah-menu">
+                                <a href="#w-icon-service" class="navigasi">About
+                                    <div class="b-down"></div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class=" k-nav">
+                            <div class="wadah-menu">
+                                <a href="#wadah-phone-our-history" class="navigasi">History
+                                    <div class="b-down"></div>
+                                </a>
+                               
+                            </div>
+                        </div>
+                        <div class=" k-nav">
+                            <a href="#wadah-phone-our-history" class="navigasi">Portfolio
+                                <div class="b-down"></div>
+                            </a>
+                        </div>
+                    </nav>
+
+                    
+            </div>
+
+            <div style="padding-top: 150px;">
+                <center>
+                    <img class="avatar" src="_img/img_avatar1.png" alt="">
+                    <p class="" style="color: lightsteelblue; font-size: 14pt; font-family: arial;">
+                        <b>
+                            Adi Wahyudi
+                        </b>
+                    </p>
+                    <p class="" style="color: lightgray; font-size: 9pt; font-family: arial;">
+                        Programmer | Student | App Web Engineer
+                    </p>
+                </center>
+
+                <center>
+                    <div style="margin-top: 70px;">
+                        <a href="#w-icon-service" style="text-decoration: none;">
+                            <div class="w-view-more">
+                                <p class="font-view-more">View More</p>
+                            </div>
+                        </a>
+
+                        <a href="#w-icon-service" id="w-icon-double-down">
+                            <i class="fas fa-angle-double-down icon-double-down" id="icon-double-down-1"></i>
+                            <i class="fas fa-angle-down icon-double-down" id="icon-double-down-2" style="margin-top:20px;"></i>
+                        </a>
+                    </div>
+                </center>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- my skills -->
+    <div style="clear:both;"></div>
+    <div style="width:100%;height:83vh;">
+        
+        <div id="w-icon-service" class="f-left" align="center">
+
+            <p class="title-our-history" style="margin-bottom: 70px;"><b>My skills</b></p>
+
+            <div>
+
+                <div id="border-lingkaran">
+                    
+                    <div class="w-icon-icon">
+                        <i class="far fa-newspaper font-icon add-font-icon" id="icon-newspaper"></i>
+                        <i class="fas fa-coins font-icon" id="icon-coins"></i>
+                        <i class="fas fa-chart-line font-icon" id="icon-chart-line"></i>
+                        <i class="far fa-clock font-icon" id="icon-clock"></i>
+                        <i class="fas fa-shield-alt font-icon" id="icon-sheild"></i>
+                        <i class="fas fa-globe font-icon" id="icon-globe"></i>
+                        <i class="fas fa-layer-group font-icon" id="icon-layer-group"></i>
+                        <i class="fas fa-lock font-icon" id="icon-lock"></i>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-newspaper" align="center" style="display: block;">
+                            
+                        <div id="title-small-service-newspaper">
+                            <p class="title-small-service">
+                                Develovement
+                            </p>
+                        </div>
+                        <div id="title-small-service-newspaper">
+                            <p class="title-big-service">
+                                Innovative Method
+                            </p>
+                        </div>
+                        <div id="konten-service-newspaper">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-coins" align="center">
+                        <div id="title-small-service-coins">
+                            <p class="title-small-service">
+                                Develovement
+                            </p>
+                        </div>
+                        <div id="title-small-service-coins">
+                            <p class="title-big-service">
+                                Encrypted Paymant
+                            </p>
+                        </div>
+                        <div id="konten-service-coins">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-chart-line" align="center">
+                        <div id="title-small-service-chart-line">
+                            <p class="title-small-service">
+                                Selling & Buyying
+                            </p>
+                        </div>
+                        <div id="title-small-service-chart-line">
+                            <p class="title-big-service">
+                                Fast Growing
+                            </p>
+                        </div>
+                        <div id="konten-service-chart-line">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-clock" align="center">
+                        <div id="title-small-service-clock">
+                            <p class="title-small-service">
+                                Selling & Buyying
+                            </p>
+                        </div>
+                        <div id="title-small-service-clock">
+                            <p class="title-big-service">
+                                Time Efficient
+                            </p>
+                        </div>
+                        <div id="konten-service-clock">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-sheild" align="center">
+                        <div id="title-small-service-sheild">
+                            <p class="title-small-service">
+                                Selling & Buyying
+                            </p>
+                        </div>
+                        <div id="title-small-service-sheild">
+                            <p class="title-big-service">
+                                High Security
+                            </p>
+                        </div>
+                        <div id="konten-service-sheild">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-globe" align="center">
+                        <div id="title-small-service-globe">
+                            <p class="title-small-service">
+                                Develovement
+                            </p>
+                        </div>
+                        <div id="title-small-service-globe">
+                            <p class="title-big-service">
+                                Mobile Payment
+                            </p>
+                        </div>
+                        <div id="konten-service-globe">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-layer-group" align="center">
+                        <div id="title-small-service-layer-group">
+                            <p class="title-small-service">
+                                Develovement
+                            </p>
+                        </div>
+                        <div id="title-small-service-layer-group">
+                            <p class="title-big-service">
+                                Trust Your Intuition
+                            </p>
+                        </div>
+                        <div id="konten-service-layer-group">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-lock" align="center">
+                        <div id="title-small-service-lock">
+                            <p class="title-small-service">
+                                Selling & Buyying
+                            </p>
+                        </div>
+                        <div id="title-small-service-lock">
+                            <p class="title-big-service">
+                                National Security
+                            </p>
+                        </div>
+                        <div id="konten-service-lock">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; margin-right: 60px; float: right;">
+                <a href="moreskill.html" style="text-decoration: none;">
+                    <div style="display: flex; justify-content: center; align-items: center; background: lightsteelblue; width: 120px; color: white; padding: 5px; border-radius: 5px;">
+                        <div>
+                            <i class="fas fa-arrow-right" style="font-size: 10pt; margin-right: 15px;"></i>
+                        </div>
+                        <p style="margin: 0px;">more</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="w-deskripsi-service f-left" align="center">
+
+            <p class="title-our-history"><b>List About Me</b></p>
+
+            <div id="konten-deskripsi" align="center">
+
+                <div class="wadah-konten-deskripsi" id="konten-deskripsi-1">
+                    <p id="title-deskripsi-service">
+                        Asperiores Ovtio Ipsum Blanditiis.
+                    </p>
+                    <div class="garis-atas-deskripsi-service"></div>
+                    <p class="deskripsi-service">
+                        Sit amet consectetur adipisicing elit. Doloremque assumenda aliquid, quisquam neque reprehenderit quo maxime eveniet temporibus, unde illum, molestias optio itaque quasi. Autem voluptates minima consectetur animi quasi.  
+                    </p>
+                </div>
+                <div class="wadah-konten-deskripsi" id="konten-deskripsi-2">
+                    <p id="title-deskripsi-service">
+                        Sit Amet Consectetur Adipisicing.
+                    </p>
+                    <div class="garis-atas-deskripsi-service"></div>
+                    <p class="deskripsi-service">
+                        Asperiores Ovtio Ipsum Blanditiis. Doloremque assumenda aliquid, quisquam neque reprehenderit quo maxime eveniet temporibus, unde illum, molestias optio itaque quasi. Autem voluptates minima consectetur animi quasi.  
+                    </p>
+                </div>
+                <div class="wadah-konten-deskripsi" id="konten-deskripsi-3">
+                    <p id="title-deskripsi-service">
+                        Doloremque Assumenda Aliquid.
+                    </p>
+                    <div class="garis-atas-deskripsi-service"></div>
+                    <p class="deskripsi-service">
+                        Sit amet consectetur adipisicing elit. Doloremque assumenda aliquid, quisquam neque reprehenderit quo maxime eveniet temporibus, unde illum, molestias optio itaque quasi. Autem voluptates minima consectetur animi quasi.  
+                    </p>
+                </div>
+                
+            </div>
+
+                <div class="garis-bawah-deskripsi-service"></div>
+
+            <div style="clear:both;"></div>
+
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+        
+    
+    
+    <!-- my history & _phone -->
+    
+    <div id="wadah-phone-our-history">
+    <!-- my history -->
+
+    <div class="f-left" id="wadah-konten-our-history" align="left">
+            <div id="w-konten-our-history">
+                <div class="w-title-our-history">
+                    <p class="title-our-history"><b>My History</b></p>
+                </div>
+
+                <div class="wadah-konten-tahun-our-history" id="konten-our-history-2013" style="display:block;">
+                    <div>
+                        <p class="title-konten-our-history">Cottas credere! Canis de.</p>
+                    </div>
+                    <div>
+                        <p class="konten-our-history" id="">Cottas credere! Canis de neuter tabes, convertam contencio! Nunquam <br> consumere triticum. Cum nomen favere, omnes byssuses carpseris <br> nobilis, dexter caculaes.</p>
+                    </div>
+                </div>
+
+                <div class="wadah-konten-tahun-our-history" id="konten-our-history-2015">
+                    <div>
+                        <p class="title-konten-our-history">Historia de azureus index.</p>
+                    </div>
+                    <div>
+                        <p class="konten-our-history" id="">Historia de azureus index, perdere messor! Abactor raptus mensa est. <br> Heu, uria! Regius, noster bubos virtualiter resuscitabo de clemens,<br> velox pars.</p>
+                    </div>
+                </div>
+
+                <div class="wadah-konten-tahun-our-history" id="konten-our-history-2017">
+                    <div>
+                        <p class="title-konten-our-history">Ire cito ducunt ad neuter ratione.</p>
+                    </div>
+                    <div>
+                        <p class="konten-our-history" id="">Ire cito ducunt ad neuter ratione. Nunquam transferre mortem. <br> Tumultumque de placidus burgus, carpseris mons! Index de velox <br> fuga, acquirere solitudo.</p>
+                    </div>
+                </div>
+
+                <div class="wadah-konten-tahun-our-history" id="konten-our-history-2019">
+                    <div>
+                        <p class="title-konten-our-history">Partnering Ubi est lotus domus </p>
+                    </div>
+                    <div>
+                        <p class="konten-our-history" id="">Heuretes, caesium, et mens. Ubi est lotus domus? Nunquam gratia <br> cobaltum. Superbus, rusticus decors grauiter fallere de fortis, raptus <br> demolitione.</p>
+                    </div>
+                </div>
+                
+
+                <div class="wadah-grafik-tahun-our-history">
+                    <div class="w-garis-tahun-our-history">
+                        <div class="garis-tahun-our-history" style="width:30px;"></div>
+                    </div>
+                    <div style="perspective:100px;perspective-origin:60% 10%;">
+                        <div class="lingkaran-tahun-our-history add-lingkaran-tahun-our-history" id="tahun-2013">
+                            <div class="lingkaran-dalam-tahun-our-history" id="ld-tahun-2013" style="display:block;"></div>
+                        </div>
+                        <div>
+                            <p class="font-tahun-our-history">2013</p>
+                        </div>
+                    </div>
+        
+                    <div class="w-garis-tahun-our-history">
+                        <div class="garis-tahun-our-history"></div>
+                    </div>
+                    <div style="perspective:100px;perspective-origin:60% 10%;">
+                        <div class="lingkaran-tahun-our-history" id="tahun-2015">
+                            <div class="lingkaran-dalam-tahun-our-history" id="ld-tahun-2015"></div>
+                        </div>
+                        <div>
+                            <p class="font-tahun-our-history">2015</p>
+                        </div>
+                    </div>
+        
+                    <div class="w-garis-tahun-our-history">
+                        <div class="garis-tahun-our-history"></div>
+                    </div>
+                    <div style="perspective:100px;perspective-origin:60% 10%;">
+                        <div class="lingkaran-tahun-our-history" id="tahun-2017">
+                            <div class="lingkaran-dalam-tahun-our-history" id="ld-tahun-2017"></div>
+                        </div>
+                        <div>
+                            <p class="font-tahun-our-history">2017</p>
+                        </div>
+                    </div>
+        
+                    <div class="w-garis-tahun-our-history">
+                        <div class="garis-tahun-our-history"></div>
+                    </div>
+                    <div style="perspective:100px;perspective-origin:60% 10%;">
+                        <div class="lingkaran-tahun-our-history" id="tahun-2019">
+                            <div class="lingkaran-dalam-tahun-our-history" id="ld-tahun-2019"></div>
+                        </div>
+                        <div>
+                            <p class="font-tahun-our-history">2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- portfolio -->
+
+        <div class="wadah-phone-konten f-left" align="center">
+            <p class="title-our-history"><b>My portfolio</b></p>
+            <div id="slick-tampilan-phone" class="phone-mobile" align="center">
+                <div id="tampilan-1-mobile">
+                    <div class="w-tampilan-mobile">
+                        <div class="tampilan-mobile" id="img-tampilan-mobile1"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+        <div style="clear:both;"></div>       
+    </div>
+</body>
+</html>

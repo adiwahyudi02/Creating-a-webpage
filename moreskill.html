@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>skill</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="_css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="_css/responsive.css" />
+    <script src="_js/jquery.min.js"></script>
+    <script>
+    
+    // service lingkaran ikon
+
+    $(document).ready(function () {
+    
+    function gantiService(item) {
+                    $(".w-konten-service").hide();
+    
+                    $(".font-icon").removeClass("add-font-icon");
+    
+                    $("#icon-" + item).addClass("add-font-icon");
+    
+                    $("#w-konten-service-" + item).hide();
+    
+                    $("#w-konten-service-" + item).fadeIn();
+    
+                    }
+    
+                $("#icon-newspaper").click(function () {
+                    gantiService("newspaper");
+                });
+    
+                $("#icon-coins").click(function () {
+                    gantiService("coins");
+                });
+    
+                $("#icon-chart-line").click(function () {
+                    gantiService("chart-line");
+                });
+    
+                $("#icon-clock").click(function () {
+                    gantiService("clock");
+                });
+    
+                $("#icon-sheild").click(function () {
+                    gantiService("sheild");
+                });
+    
+                $("#icon-globe").click(function () {
+                    gantiService("globe");
+                });
+    
+                $("#icon-layer-group").click(function () {
+                    gantiService("layer-group");
+                });
+    
+                $("#icon-lock").click(function () {
+                    gantiService("lock");
+                });
+            });
+    
+    </script>
+</head>
+<body>
+    <div id="w-more-skill">
+    <div id="w-icon-service" align="center">
+
+
+            <div style="margin-top: 30px; margin-left: 50px; margin-bottom: 80px; float: left;">
+                <a href="home.html" style="text-decoration: none;">
+                    <div style="display: flex; justify-content: center; align-items: center; background: lightsteelblue; width: 120px; color: white; padding: 5px; border-radius: 5px;">
+                        <div>
+                            <i class="fas fa-arrow-left" style="font-size: 10pt; margin-right: 15px;"></i>
+                        </div>
+                        <p style="margin: 0px;">back</p>
+                    </div>
+                </a>
+            </div>
+
+            <div style="clear: both;"></div>
+
+            <div>
+
+                <div id="border-lingkaran">
+                    
+                    <div class="w-icon-icon">
+                        <i class="far fa-newspaper font-icon add-font-icon" id="icon-newspaper"></i>
+                        <i class="fas fa-coins font-icon" id="icon-coins"></i>
+                        <i class="fas fa-chart-line font-icon" id="icon-chart-line"></i>
+                        <i class="far fa-clock font-icon" id="icon-clock"></i>
+                        <i class="fas fa-shield-alt font-icon" id="icon-sheild"></i>
+                        <i class="fas fa-globe font-icon" id="icon-globe"></i>
+                        <i class="fas fa-layer-group font-icon" id="icon-layer-group"></i>
+                        <i class="fas fa-lock font-icon" id="icon-lock"></i>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-newspaper" align="center" style="display: block;">
+                            
+                        <div id="title-small-service-newspaper">
+                            <p class="title-small-service">
+                                Develovement
+                            </p>
+                        </div>
+                        <div id="title-small-service-newspaper">
+                            <p class="title-big-service">
+                                Innovative Method
+                            </p>
+                        </div>
+                        <div id="konten-service-newspaper">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-coins" align="center">
+                        <div id="title-small-service-coins">
+                            <p class="title-small-service">
+                                Develovement
+                            </p>
+                        </div>
+                        <div id="title-small-service-coins">
+                            <p class="title-big-service">
+                                Encrypted Paymant
+                            </p>
+                        </div>
+                        <div id="konten-service-coins">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-chart-line" align="center">
+                        <div id="title-small-service-chart-line">
+                            <p class="title-small-service">
+                                Selling & Buyying
+                            </p>
+                        </div>
+                        <div id="title-small-service-chart-line">
+                            <p class="title-big-service">
+                                Fast Growing
+                            </p>
+                        </div>
+                        <div id="konten-service-chart-line">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-clock" align="center">
+                        <div id="title-small-service-clock">
+                            <p class="title-small-service">
+                                Selling & Buyying
+                            </p>
+                        </div>
+                        <div id="title-small-service-clock">
+                            <p class="title-big-service">
+                                Time Efficient
+                            </p>
+                        </div>
+                        <div id="konten-service-clock">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-sheild" align="center">
+                        <div id="title-small-service-sheild">
+                            <p class="title-small-service">
+                                Selling & Buyying
+                            </p>
+                        </div>
+                        <div id="title-small-service-sheild">
+                            <p class="title-big-service">
+                                High Security
+                            </p>
+                        </div>
+                        <div id="konten-service-sheild">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-globe" align="center">
+                        <div id="title-small-service-globe">
+                            <p class="title-small-service">
+                                Develovement
+                            </p>
+                        </div>
+                        <div id="title-small-service-globe">
+                            <p class="title-big-service">
+                                Mobile Payment
+                            </p>
+                        </div>
+                        <div id="konten-service-globe">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-layer-group" align="center">
+                        <div id="title-small-service-layer-group">
+                            <p class="title-small-service">
+                                Develovement
+                            </p>
+                        </div>
+                        <div id="title-small-service-layer-group">
+                            <p class="title-big-service">
+                                Trust Your Intuition
+                            </p>
+                        </div>
+                        <div id="konten-service-layer-group">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-konten-service" id="w-konten-service-lock" align="center">
+                        <div id="title-small-service-lock">
+                            <p class="title-small-service">
+                                Selling & Buyying
+                            </p>
+                        </div>
+                        <div id="title-small-service-lock">
+                            <p class="title-big-service">
+                                National Security
+                            </p>
+                        </div>
+                        <div id="konten-service-lock">
+                            <p class="konten-service">
+                                Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.  Culpa inventore.
+                            </p>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+        </div>
+
+        <div id="w-skill-table">
+            <table cellspacing='0'>
+                <tr>
+                    <th>
+                        SKILL
+                    </th>
+                    <th>
+                        PERSENTASE
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        Designer web
+                    </td>
+                    <td>
+                        <div class="w-persen">
+                            <div class="persentase" style="width: 70%;">
+                                <div class="persen" style="width: 70%;"></div>
+                            </div>
+                            <p class="font-persen">70%</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        App Web Enginner
+                    </td>
+                    <td>
+                        <div class="w-persen">
+                            <div class="persentase" style="width: 70%;">
+                                <div class="persen" style="width: 80%;"></div>
+                            </div>
+                            <p class="font-persen">80%</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Api Engineer
+                    </td>
+                    <td>
+                        <div class="w-persen">
+                            <div class="persentase" style="width: 70%;">
+                                <div class="persen" style="width: 80%;"></div>
+                            </div>
+                            <p class="font-persen">80%</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

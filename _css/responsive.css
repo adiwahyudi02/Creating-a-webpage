@@ -1,0 +1,116 @@
+@media screen and (max-width: 1080px){
+    .main-nav-mobile{
+        position: fixed;
+    }
+    .container{
+        background: white;
+        box-shadow: 0.5px 0.5px 15px 0.5px rgb(182, 179, 179);
+    }
+
+    .title{
+        margin-left: 20px;
+    }
+    .w-nav{
+        margin-right: 20px;
+    }
+
+    #w-more-skill{
+        display: block;
+    }
+
+    #w-skill-table{
+        width: 100%;
+    }
+
+    /* sevice */
+
+    #w-icon-service{
+        width: 100%;
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    #border-lingkaran{
+        transform: scale(1.25);
+    }
+    .w-deskripsi-service{
+        width: 100%;
+    }
+    
+    /* my-history */
+    #wadah-konten-our-history{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+    .wadah-grafik-tahun-our-history {
+        width: 50%;
+        margin: auto;
+        transform: scale(0.95);
+    }
+    #w-konten-our-history{
+        padding-left: 0;
+    }
+
+    /* portfolio */
+    
+    .wadah-phone-konten{
+        width: 100%;
+    }
+    #slick-tampilan-phone{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width: 750px) {
+
+    /* my skill */
+
+    #border-lingkaran{
+        transform: scale(0.60);
+        padding: 0;
+        width: 400px;
+        height: 400px;
+    }
+    .w-icon-icon{
+        margin-top: 0;
+    }
+    #w-icon-service{
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .w-deskripsi-service{
+        width: 100%;
+    }
+    #konten-deskripsi{
+        margin-top: 50px;
+    }
+    .garis-bawah-deskripsi-service{
+        width: 200px;
+    }
+
+    /* portfolio & history */
+    #slick-tampilan-phone{
+        transform: scale(0.75);
+        width: 100%;
+    }
+    #w-konten-our-history{
+        transform: scale(0.75);
+        padding-left: 0;
+    }
+    .wadah-grafik-tahun-our-history {
+        margin-left: 0px;
+    }
+    .garis-tahun-our-history{
+        width: 80px;
+    }
+}
+@media screen and (max-width: 380px) {
+
+    #border-lingkaran{
+        margin-left: -40px !important;
+    }
+}

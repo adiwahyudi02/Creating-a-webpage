@@ -1,0 +1,816 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 10px solid white;
+    box-shadow: 0.5px 0.5px 5px 0.5px rgb(182, 179, 179);
+}
+#bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-attachment: fixed;
+    /* display: none; */
+}
+#shadow{
+    /* background-color: rgba(0 , 0 , 0 , 0.4); */
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.title{
+    margin: 0;
+    color: lightseagreen;
+    font-family: berlin sans fb;
+    margin-left: 100px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background: rgb(232, 232, 240,0.3);
+    padding: 10px;
+    box-shadow: 0.5px 0.5px 5px 0.5px rgb(182, 179, 179);
+}
+.navigasi{
+    text-decoration: none;
+    font-size: 12px;
+    color: lightseagreen;
+    font-family: berlin sans fb;
+    padding-bottom: 9px;
+    font-weight: bold;
+    
+}
+.f-right{
+    float: right;
+}
+.f-left{
+    float: left;
+}
+.k-nav{
+    margin-right: 35px;
+}
+.w-nav{
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+.b-down{
+    background-color: lightseagreen;
+    margin: auto;
+    margin-top: 5px;
+    width: 10px;
+    height: 3px;
+    margin-top: 7px;
+    margin-bottom: -1px;
+    transition: 0.3s;
+}
+.garis{
+    clear: both;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    opacity: .2;
+}
+.navigasi:hover .b-down{
+    width: 100%;
+}
+.kotak-dd{
+    width: 120px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    margin-top: 15px;
+    padding-top: 0px;
+    border-radius: 1px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.garis-dd{
+    height: 1px;
+    width: 70px;
+    background-color:white;
+    margin-top: 6px;
+    transition: 0.5s;
+    position: absolute;
+}
+.kotak-dd:hover .garis-dd{
+    width: 120px;
+}
+.size-img{
+    width: 13px;
+    height: auto;
+    margin-left: 13px;
+    margin-right: 8px;
+    float: left;
+}
+.sub-title{
+    color: white;
+    font-family: berlin sans fb;
+    font-size: 10.5px;
+}
+.sub-title:hover{
+    opacity: .5;
+}
+.main-header{
+    clear: both;
+    margin-top: 200px;
+    margin-bottom: 100px;
+ }
+.text-submain-header{
+    /* font-family: berlin sans fb; */
+    color: lightsalmon;
+    margin-top: -25px;
+}
+.garis-atas-main{
+    background-color: white;
+    height: 3px;
+    width: 100px;
+    margin-bottom: -25px;
+}
+.garis-bawah-main{
+    background-color: white;
+    height: 3px;
+    width: 300px;
+    margin-top: -10px;
+}
+.wadah-menu:hover .kotak-dd{
+    visibility: visible;
+    opacity: 1;
+}
+/* .wadah-bodas{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+} */
+.g-atas-bawah-icon{
+    clear: both;
+    width: 15px;
+    height: 10px;
+    background-color:transparent;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    margin-top: 10px;
+    margin-right: -50px;
+    margin-bottom: 10px;
+}
+.g-tengah-icon{
+    width: 15px;
+    height: 1px;
+    margin-top: 4.5px;
+    background-color: black;
+}
+.icon-menu{
+    display: none;
+    cursor: pointer;
+    width: 10%;
+}
+.font-navigasi-mobile{
+    width: 40%;
+    color: white;
+    text-decoration: none;
+    font-family: berlin sans fb;
+    font-size: 14px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.w-main-nav-mobile{
+   width: 100%;
+   position:absolute;
+   display:none;
+   right: 0%;
+}
+.sub-mobile{
+    color: white;
+    text-decoration: none;
+    font-family: berlin sans fb;
+    font-size: 11.5px;
+    margin-left: 45px;
+    transition:0.2s;
+}
+.sub-mobile:hover{
+	opacity: .5;
+}
+.d-none {
+    display: none;
+}
+.wadah-menu-mobile-explore{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+}
+.dd-mobile-explore{
+	background-color:rgba(255, 255, 255, 0.07);
+}
+.wadah-menu-mobile-about{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+}
+.dd-mobile-about{
+	background-color:rgba(255, 255, 255, 0.07);
+}
+.wadah-menu-mobile-resources{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+}
+.dd-mobile-resources{
+	background-color:rgba(255, 255, 255, 0.07);
+}
+.wadah-menu-mobile-catalog{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+}
+.dd-mobile-catalog{
+	background-color:rgba(255, 255, 255, 0.07);
+}
+.wadah-menu-mobile-visit{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+}
+.dd-mobile-visit{
+    background-color:rgba(255, 255, 255, 0.07);
+}
+.wadah-menu-mobile-home{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+}
+.wadah-menu-mobile-services{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+}
+.icon-menu{
+    display: none;
+    
+}
+.main-nav-mobile{
+    width: 100%;
+}
+.icon-close-menu{
+    display: none;
+    
+}
+.garis-kanan-icon{
+    clear: both;
+    width: 17px;
+    height: 1px;
+    background-color:transparent;
+    border-bottom: 1px black solid;
+    transform: rotate(40deg);
+    margin-top: 13px;
+    margin-right: -45px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.garis-kiri-icon{
+    clear: both;
+    width: 17px;
+    height: 1px;
+    background-color:transparent;
+    border-bottom: 1px black solid;
+    transform: rotate(-80deg);
+    margin-top: 13px;
+    margin-right: -45px;
+    margin-bottom: 10px;
+}
+
+/* ncan anggus penempatanna */
+
+/* icon-sub-explore */
+.icon-sub-nav-explore{
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+    border-right: 2px white solid;
+    transform: rotate(135deg);
+    border-top: 2px white solid;
+    margin: 6px;
+    cursor:pointer;
+}
+.icon-sub-nav-on-explore{
+    transform: rotate(-45deg);
+}
+
+/* icon-sub-about */
+.icon-sub-nav-about{
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+    border-right: 2px white solid;
+    transform: rotate(135deg);
+    border-top: 2px white solid;
+    margin: 6px;
+    cursor:pointer;
+}
+.icon-sub-nav-on-about{
+    transform: rotate(-45deg);
+}
+
+/* icon-sub-resources */
+.icon-sub-nav-resources{
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+    border-right: 2px white solid;
+    transform: rotate(135deg);
+    border-top: 2px white solid;
+    margin: 6px;
+    cursor:pointer;
+}
+.icon-sub-nav-on-resources{
+    transform: rotate(-45deg);
+}
+
+/* icon-sub-catalog */
+.icon-sub-nav-catalog{
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+    border-right: 2px white solid;
+    transform: rotate(135deg);
+    border-top: 2px white solid;
+    margin: 6px;
+    cursor:pointer;
+}
+.icon-sub-nav-on-catalog{
+    transform: rotate(-45deg);
+}
+
+/* icon-sub-visit */
+.icon-sub-nav-visit{
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+    border-right: 2px white solid;
+    transform: rotate(135deg);
+    border-top: 2px white solid;
+    margin: 6px;
+    cursor:pointer;
+}
+.icon-sub-nav-on-visit{
+    transform: rotate(-45deg);
+}
+.w-view-more{
+    background-color: lightsteelblue;
+    text-align: center;
+    width: 150px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.font-view-more{
+    color: white;
+    font-family: berlin sans fb;
+    font-size: 11pt;
+    text-decoration: none;
+    font-weight: inherit;
+    margin: 0;
+}
+.w-view-more:hover{
+    background-color: lightseagreen; 
+}
+#w-icon-double-down{
+    margin-top: 20px;
+}
+.icon-double-down{
+    color: lightsteelblue;
+    font-size: 25pt;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#icon-double-down-1{
+    animation-name: down1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+#icon-double-down-2{
+    animation-name: down2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+#w-icon-double-down:hover .icon-double-down{
+    color: lightsteelblue;
+}
+@keyframes down1{
+    from{
+        margin-top: 38px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        margin-top: 58px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes down2{
+    from{
+        margin-top: 20px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        margin-top: 40px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+#kotak1{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+#kotak2{
+    width: 100px;
+    height: 100px;
+    margin-top: 500px;
+    background:blue;
+}
+
+
+#w-icon-service{
+    width: 50%;
+    background:rgb(232, 232, 240,0.3);
+    padding-bottom: 100px;
+}
+#border-lingkaran{
+    border: 2px dashed rgb(175, 169, 169);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 100px;
+}
+.konten-service{
+    color: grey;
+}
+.w-konten-service{
+    display: none;
+    margin-top: 100px;
+}
+.title-small-service{
+    color: rgb(181, 237, 68);
+    font-size: 11pt;
+}
+.title-big-service{
+    font-size: 17pt;
+    font-family: berlin sans fb;
+}
+.font-icon{
+    font-size: 27pt;
+    background: white;
+    color: rgb(117, 117, 117);
+    box-shadow: 1px 1px 10px 1px rgb(207, 203, 203);
+    border-radius: 50%;
+    padding: 30px;
+    transition: 0.45s;
+    cursor: pointer;
+    position: absolute;
+}
+.font-icon:hover{
+    color: white;
+    background:rgb(181, 237, 68);
+}
+.add-font-icon{
+    background:rgb(181, 237, 68);   
+    color: white;
+}
+#icon-newspaper{
+    margin-left: 100px;
+    margin-top: 15px;
+    animation-name: bg-icon-service;
+    animation-duration: 5s;
+}
+#icon-coins{
+    margin-left: 150px;
+    margin-top: 150px;
+    animation-name: bg-icon-service;
+    animation-delay: 5s;
+    animation-duration: 5s;
+}
+#icon-chart-line{
+    margin-top: 280px;
+    margin-left: 100px;
+    animation-name: bg-icon-service;
+    animation-delay: 10s;
+    animation-duration: 5s;
+}
+#icon-clock{
+    margin-top: 350px;
+    margin-left: -40px;
+    animation-name: bg-icon-service;
+    animation-delay: 15s;
+    animation-duration: 5s;
+}
+#icon-sheild{
+    margin-top: 280px;
+    margin-left: -190px;
+    animation-name: bg-icon-service;
+    animation-delay: 20s;
+    animation-duration: 5s;
+}
+#icon-globe{
+    margin-top: 150px;
+    margin-left: -250px;
+    animation-name: bg-icon-service;
+    animation-delay: 25s;
+    animation-duration: 5s;
+}
+#icon-layer-group{
+    margin-top: 15px;
+    margin-left: -190px;
+    animation-name: bg-icon-service;
+    animation-delay: 30s;
+    animation-duration: 5s;
+}
+#icon-lock{
+    margin-top: -50px;
+    margin-left: -40px;
+    animation-name: bg-icon-service;
+    animation-delay: 35s;
+    animation-duration: 5s;
+}
+.w-icon-icon{
+    margin-top: -100px;
+}
+
+.w-deskripsi-service{    
+    width: 50%;
+    height: 83vh;
+}
+#konten-deskripsi{
+    margin-top: 80px;
+}
+#title-deskripsi-service{
+    font-family: berlin sans fb;
+    font-size: 17pt;
+    color: grey;
+}
+.garis-atas-deskripsi-service{
+    width: 70px;
+    height: 3px;
+    background:rgb(181, 237, 68);
+    margin-top: -17px;
+}
+.garis-bawah-deskripsi-service{
+    width: 300px;
+    height: 3px;
+    background:rgb(181, 237, 68);
+    margin: 30px;
+    margin-top: 10px;
+}
+.deskripsi-service{
+    color: rgb(177, 170, 170);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+}
+.icon-deskripsi-service{
+    color: rgb(181, 237, 68);
+    font-size: 8pt;
+    margin: 7px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.icon-deskripsi-service:hover{
+    box-shadow: none;
+    background: rgb(181, 237, 68);
+}
+.add-icon-deskripsi-service{
+    background: rgb(181, 237, 68);
+}
+.wadah-konten-deskripsi{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: none;
+}
+#konten-deskripsi .slick-arrow{
+    display: none !important;
+}
+
+/* history & portfolio */
+
+#wadah-phone-our-history{
+    width: 100%;
+}
+
+    /* portfolio */
+
+.wadah-phone-konten{
+    width: 50%;
+    background: rgb(232, 232, 240,0.3);
+    padding-top: 20px;
+}
+.w-tampilan-mobile{
+    width: 265px;
+    height: 448px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 33px;
+}
+.tampilan-mobile{
+    width: 100%;
+    height: 180vh;
+    background-repeat: no-repeat;
+    transition: 3s;
+    position: absolute;
+    
+}
+#img-tampilan-mobile1{
+    background-image: url(../_img/artboard-finish3.png);
+}
+#img-tampilan-mobile2{
+    background-image: url(../_img/artboard-finish4.png);
+}
+#img-tampilan-mobile3{
+    background-image: url(../_img/artboard-finish5.png);
+}
+.w-tampilan-mobile:hover .tampilan-mobile{
+    margin-top: -540px;
+}
+#slick-tampilan-phone{
+    width: 80%;
+    height: 500px;
+    padding-top: 20px;
+}
+.w-phone-mobile{
+    width:  100%;
+    height: 515px;
+}
+.phone-mobile{
+    background-image: url(../_img/phone5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 7px;
+}
+
+/* history */
+#wadah-konten-our-history{
+    width: 50%;
+    background: white;
+    padding-top: 165px;
+    padding-bottom: 200px;
+}
+.wadah-grafik-tahun-our-history{
+    display: flex;
+}
+.garis-tahun-our-history{
+    width: 120px;
+    height: 3px;
+    background-color: lightblue;
+}
+.lingkaran-tahun-our-history{
+    width: 20px;
+    height:20px;
+    border: lightblue 3px solid;
+    border-radius: 50%;
+    transform: scale(1,1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.w-garis-tahun-our-history{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.lingkaran-dalam-tahun-our-history{
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: lightpink;
+    border-radius: 50%;
+    display: none;
+}
+.add-lingkaran-tahun-our-history{
+    transform: scale(1.2, 1.2);
+}
+.lingkaran-tahun-our-history:hover{
+    transform: scale(1.2, 1.2);
+}
+.font-tahun-our-history{
+    color:darkslateblue;
+    font-size: 9.5pt;
+    position: absolute;
+    margin-top: 7px;
+    font-family: cursive;
+}
+.wadah-our-history{
+    width: 50%;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    background: url(bg3.png);
+    box-shadow: inset 1000px 1000px rgba(0 , 0 , 0 , 0.7);
+}
+#w-konten-our-history{
+    width: 100%;
+    padding-left: 30px;
+}
+.wadah-konten-tahun-our-history{
+    margin-bottom:50px;
+    display: none;
+}
+.title-our-history{
+    font-family: berlin sans fb;
+    font-size: 22pt;
+    color: lightsteelblue;
+}
+.title-konten-our-history{
+    font-family: roboto,-apple-system,BlinkMacSystemFont,segoe ui,helvetica neue,Arial,sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    color: darkblue;
+}
+.konten-our-history{
+    font-family: gadugi;
+    font-size: 11pt;
+    color: darkcyan;
+}
+
+#w-more-skill{
+    display: flex; 
+    justify-content: start;
+}
+#w-skill-table{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.w-persen{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.persentase{
+    background: rgb(232, 232, 240); 
+    overflow: hidden;
+    border-radius: 5px;
+}
+.persen{
+    height: 9px; 
+    background: lightsalmon;
+}
+.font-persen{
+    font-size: 8pt; 
+    color: salmon; 
+    margin: 0;
+    margin-left: 5px;
+}
+
+table {
+    font-family: arial;
+    color: #444;
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #f2f5f7;
+    font-size: 10pt;
+}
+
+table tr th:nth-child(1) {
+    width: 30%;
+}
+
+table tr th {
+    background: lightsteelblue;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+}
+table tr{
+    transition: 0.2s;
+}
+table tr td{
+    color: lightsteelblue;
+    font-weight: bold;
+    font-size: 9pt;
+    padding: 15px;
+}
+table, th, td {
+    padding: 8px 20px;
+    text-align: center;
+}
+
+table tr:hover {
+    background-color: #f5f5f5;
+}
+ 
+table tr:nth-child(even) {
+    background-color: rgb(232, 232, 240,0.3);
+}
