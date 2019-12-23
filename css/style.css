@@ -555,6 +555,7 @@ body{
 #konten-deskripsi{
     margin-top: 80px;
 }
+
 #title-deskripsi-service{
     font-family: berlin sans fb;
     font-size: 17pt;
@@ -597,6 +598,7 @@ body{
     margin-left: 50px;
     margin-right: 50px;
     display: none;
+    list-style-type: none;
 }
 #konten-deskripsi .slick-arrow{
     display: none !important;
