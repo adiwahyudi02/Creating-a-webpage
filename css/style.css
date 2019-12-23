@@ -571,8 +571,11 @@ body{
     width: 300px;
     height: 3px;
     background:rgb(181, 237, 68);
-    margin: 30px;
     margin-top: 10px;
+}
+.w-garis-bawah-deskripsi-service{
+    display: flex;
+    justify-content: center;
 }
 .deskripsi-service{
     color: rgb(177, 170, 170);
