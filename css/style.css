@@ -567,16 +567,6 @@ body{
     background:rgb(181, 237, 68);
     margin-top: -17px;
 }
-.garis-bawah-deskripsi-service{
-    width: 300px;
-    height: 3px;
-    background:rgb(181, 237, 68);
-    margin-top: 10px;
-}
-.w-garis-bawah-deskripsi-service{
-    display: flex;
-    justify-content: center;
-}
 .deskripsi-service{
     color: rgb(177, 170, 170);
     padding-left: 20px;
