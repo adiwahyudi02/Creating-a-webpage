@@ -597,8 +597,7 @@ body{
 .wadah-konten-deskripsi{
     margin-left: 50px;
     margin-right: 50px;
-    display: none;
-    list-style-type: none;
+    display: block;
 }
 #konten-deskripsi .slick-arrow{
     display: none !important;
